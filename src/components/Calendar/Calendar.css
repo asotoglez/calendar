@@ -1,0 +1,158 @@
+.calendar {
+  width: 70%;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 65% 35%;
+  grid-template-areas: 'calendar event';
+  color: #ffffff;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.calendar__content {
+  background: #220f61;
+}
+
+.calendar__event {
+  background: #1c0a57;
+}
+
+.calendar__monthSelector {
+  display: flex;
+  height: 1.7rem;
+  align-items: center;
+  margin: 2rem;
+}
+
+.calendar__monthYear {
+  padding: 0 0.5rem;
+  font-family: 'Lato';
+  font-size: 20px;
+  width: 15%;
+  text-align: center;
+}
+
+.calendar__btn {
+  border: 1px #ffffff solid;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calendar__daysGrid ol {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  list-style: none;
+  padding: 0;
+  margin: 4rem 2rem;
+  grid-gap: 2rem;
+  font-size: 20px;
+}
+
+.calendar__daysGrid .first-day {
+  grid-column-start: 5;
+}
+
+.calendar__daysGrid .calendar__offset1 {
+  grid-column-start: 1;
+}
+
+.calendar__daysGrid .calendar__offset2 {
+  grid-column-start: 2;
+}
+
+.calendar__daysGrid .calendar__offset3 {
+  grid-column-start: 3;
+}
+
+.calendar__daysGrid .calendar__offset4 {
+  grid-column-start: 4;
+}
+
+.calendar__daysGrid .calendar__offset5 {
+  grid-column-start: 5;
+}
+
+.calendar__daysGrid .calendar__offset6 {
+  grid-column-start: 6;
+}
+
+.calendar__daysGrid .calendar__offset7 {
+  grid-column-start: 7;
+}
+
+.calenday__day {
+  width: 2.5rem;
+  height: 2.5rem;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  cursor: pointer;
+}
+
+.calendar__today {
+  border-radius: 50%;
+  background-color: #e015ed;
+  box-shadow: 0 4px 12px rgb(224 21 237);
+}
+
+.calendar__event {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.calendar__literalDate {
+  text-align: center;
+  margin: 2rem;
+  font-size: 20px;
+}
+
+div.calendar__literalDate > div:nth-child(2) {
+  margin-top: 0.5rem;
+  text-transform: capitalize;
+}
+
+.calendar__addEventBtnContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
+
+.calendar__addEventBtn {
+  width: 50%;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10rem;
+  background-color: #e015ed;
+  box-shadow: 0 2px 12px rgb(224 21 237);
+  cursor: pointer;
+  user-select: none;
+}
+
+.calendar__addEventBtn:hover {
+  transform: scale(1.05);
+  transition: transform 0.1s;
+}
+
+.calendar__eventBoard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.calendar__eventBoardText {
+  color: #755dd4;
+  font-family: 'Lato';
+}
