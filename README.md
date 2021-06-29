@@ -12,4 +12,4 @@ The page will reload if you make edits.\
 You will also see any lint errors in the console.
 
 ## Preview
-![](https://user-images.githubusercontent.com/24250413/123175208-62cc6780-d44f-11eb-8509-e3d594b2fce0.PNG)
+![](https://user-images.githubusercontent.com/24250413/123869112-964f3c00-d8fe-11eb-8b91-47cb2e724ebf.png)
